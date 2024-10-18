@@ -3,13 +3,11 @@ import React from "react";
 
 import { Container, Text } from "./styles";
 
-export const Dashboard = () => {
-  console.log("LA VAI BOMBA");
-  console.log("LA VAI BOMBA");
+console.log("TESTE");
+console.log("TESTE");
 
+export const Dashboard = () => {
   return (
-    <Container>
-      <Text>Pronto para voar ao seu lado !</Text>
-    </Container>
+    <Container>{/* <Text>Pronto para voar ao seu lado !</Text> */}</Container>
   );
 };

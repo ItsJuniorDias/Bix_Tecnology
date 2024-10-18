@@ -13,5 +13,5 @@ export const Text = styled.h1`
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.01em;
-  list-style-position: inside;
+  /* list-style-position: inside; */
 `;
