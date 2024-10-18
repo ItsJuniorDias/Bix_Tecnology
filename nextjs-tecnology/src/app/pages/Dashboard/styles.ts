@@ -10,8 +10,8 @@ export const Text = styled.h1`
   font-family: var(--font-nunito-medium);
   padding-left: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 24px;
   letter-spacing: -0.01em;
-  /* list-style-position: inside; */
+  list-style-position: inside;
 `;
