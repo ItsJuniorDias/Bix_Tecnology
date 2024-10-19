@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <Body>
         <Dashboard />
-
         <Header />
       </Body>
     </>

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 20%;
-  /* height: 35px; */
   background-color: #ecedef;
   min-height: 100svh;
   padding-top: 24px;
@@ -17,6 +16,7 @@ export const Text = styled.h5`
   letter-spacing: -0.01em;
   list-style-position: inside;
   padding-left: 16px;
+  color: #686d76;
 `;
 
 export const Content = styled.div`
@@ -26,9 +26,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: center; */
   padding-left: 16px;
-  /* padding-bottom: 26px; */
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 16px;

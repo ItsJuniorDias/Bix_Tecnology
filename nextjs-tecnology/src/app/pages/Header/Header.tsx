@@ -1,17 +1,32 @@
 import React from "react";
 import Search from "@mui/icons-material/Search";
-import { Container, Text, Input } from "./styles";
+import FilterListIcon from "@mui/icons-material/FilterList";
+
+import { Container, Filter, Text, Input, Content } from "./styles";
 
 export const Header = () => {
   return (
-    <Container>
-      <Search
-        sx={{
-          color: "#81858d",
-        }}
-      />
+    <>
+      <Content>
+        <Container>
+          <Search
+            sx={{
+              color: "#81858d",
+            }}
+          />
 
-      <Input placeholder="Pesquisar ordens..." />
-    </Container>
+          <Input placeholder="Pesquisar ordens..." />
+        </Container>
+
+        <Filter onClick={() => console.log("CLIQUEI")}>
+          <FilterListIcon
+            sx={{
+              color: "#81858d",
+            }}
+          />
+          <Text>Filtro</Text>
+        </Filter>
+      </Content>
+    </>
   );
 };
