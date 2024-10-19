@@ -1,6 +1,6 @@
 "use client";
 
-import { Dashboard, Body, Header } from "./pages";
+import { Dashboard, Body, Header, List } from "./pages";
 
 export default function Home() {
   return (
@@ -8,6 +8,8 @@ export default function Home() {
       <Body>
         <Dashboard />
         <Header />
+
+        <List />
       </Body>
     </>
   );

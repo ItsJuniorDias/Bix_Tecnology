@@ -1,22 +1,29 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 20%;
-  background-color: #ecedef;
-  min-height: 100svh;
+  width: 25%;
+  height: 100svh;
+  background-color: red;
   padding-top: 24px;
 `;
 
 export const Text = styled.h5`
-  font-family: var(--font-nunito-medium);
-  padding-left: 0;
-  margin: 0;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+  background-color: #dddddd;
+  width: 80%;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding-left: 16px;
-  color: #686d76;
+  /* margin-left: 8px; */
+  margin-right: 24px;
+  /* margin-bottom: 16px; */
+  border-color: #dddddd;
+  border-width: 0px;
+  border-radius: 8px;
+  &:hover {
+    background-color: #ffffff;
+  }
 `;
 
 export const Content = styled.div`

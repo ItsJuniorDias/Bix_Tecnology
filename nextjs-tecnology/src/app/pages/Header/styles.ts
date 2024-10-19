@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 20%;
+  width: 30%;
   height: 40px;
   background-color: #ffffff;
   border-radius: 8px;
@@ -15,6 +15,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   margin-top: -688px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding-left: 64px;
   padding-right: 64px;
@@ -22,7 +23,7 @@ export const Content = styled.div`
 `;
 
 export const Filter = styled.button`
-  width: 10%;
+  width: 15%;
   height: 40px;
   background-color: #ffffff;
   border-radius: 8px;
