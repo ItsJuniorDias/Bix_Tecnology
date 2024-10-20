@@ -1,0 +1,1 @@
+export { mockJson } from "./mockJson";

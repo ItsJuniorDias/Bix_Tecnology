@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 25%;
   height: 100svh;
-  background-color: red;
+  background-color: #ecedef;
   padding-top: 24px;
 `;
 
@@ -15,9 +15,7 @@ export const Text = styled.h5`
   flex-direction: row;
   align-items: center;
   padding-left: 16px;
-  /* margin-left: 8px; */
   margin-right: 24px;
-  /* margin-bottom: 16px; */
   border-color: #dddddd;
   border-width: 0px;
   border-radius: 8px;
