@@ -1,5 +1,4 @@
 import React from "react";
-import { format } from "date-fns";
 
 import {
   Container,
@@ -10,6 +9,10 @@ import {
   ListItemDate,
   ListItemIndustry,
   TruncatedH5,
+  ListItemAmount,
+  ListItemState,
+  ListItemTransaction,
+  ListItemCurrency,
 } from "./styles";
 
 import { mockJson } from "../../data";
@@ -87,29 +90,45 @@ export const List = () => {
           </ul>
         </ListItemDate>
 
-        {/* <ul>
-          {mockJson.map((item, index) => (
-            <li key={index}>
-              <h5>{item.amount}</h5>
-            </li>
-          ))}
-        </ul>
+        <ListItemAmount>
+          <ul>
+            {mockJson.map((item, index) => (
+              <li key={index}>
+                <TruncatedH5>{item.amount}</TruncatedH5>
+              </li>
+            ))}
+          </ul>
+        </ListItemAmount>
 
-        <ul>
-          {mockJson.map((item, index) => (
-            <li key={index}>
-              <h5>{item.state}</h5>
-            </li>
-          ))}
-        </ul>
+        <ListItemTransaction>
+          <ul>
+            {mockJson.map((item, index) => (
+              <li key={index}>
+                <h5>{item.transaction_type}</h5>
+              </li>
+            ))}
+          </ul>
+        </ListItemTransaction>
 
-        <ul>
-          {mockJson.map((item, index) => (
-            <li key={index}>
-              <h5>{item.currency}</h5>
-            </li>
-          ))}
-        </ul> */}
+        <ListItemState>
+          <ul>
+            {mockJson.map((item, index) => (
+              <li key={index}>
+                <h5>{item.state}</h5>
+              </li>
+            ))}
+          </ul>
+        </ListItemState>
+
+        <ListItemCurrency>
+          <ul>
+            {mockJson.map((item, index) => (
+              <li key={index}>
+                <h5>{item.currency}</h5>
+              </li>
+            ))}
+          </ul>
+        </ListItemCurrency>
       </ListContent>
     </Container>
   );

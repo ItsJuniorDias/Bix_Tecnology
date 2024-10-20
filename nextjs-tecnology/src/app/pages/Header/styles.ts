@@ -23,7 +23,7 @@ export const Content = styled.div`
 `;
 
 export const Filter = styled.button`
-  width: 15%;
+  width: 10%;
   height: 40px;
   background-color: #ffffff;
   border-radius: 8px;
@@ -49,7 +49,7 @@ export const Input = styled.input`
   border-width: 0;
   padding-left: 8px;
   &:focus {
-    outline: none; /* Removes the outline */
+    outline: none;
     border: none;
   }
 `;

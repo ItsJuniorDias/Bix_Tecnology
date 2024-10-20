@@ -52,6 +52,7 @@ export const ListContent = styled.div`
   background-color: green;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 `;
 
 export const ListItemContent = styled.div`
@@ -68,7 +69,27 @@ export const ListItemIndustry = styled.div`
 export const ListItemDate = styled.div`
   /* margin-right: 64px; */
   background-color: grey;
+  margin-left: 16px;
+`;
+
+export const ListItemTransaction = styled.div`
+  background-color: red;
+  margin-left: 16px;
+`;
+
+export const ListItemAmount = styled.div`
+  background-color: red;
+  margin-left: 16px;
+`;
+
+export const ListItemState = styled.div`
+  background-color: red;
   margin-left: 32px;
+`;
+
+export const ListItemCurrency = styled.div`
+  background-color: blue;
+  /* margin-left: 32px; */
 `;
 
 export const TruncatedH5 = styled.h5`
@@ -76,5 +97,5 @@ export const TruncatedH5 = styled.h5`
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%; /* Adjust width as needed */
-  color: #ddd;
+  color: #0d0e11;
 `;
