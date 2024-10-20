@@ -2,21 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 90%;
-  height: 80svh;
-  background-color: blue;
+  height: 90svh;
   display: flex;
   flex-direction: column;
   margin-left: 330px;
   margin-top: 64px;
+  margin-bottom: 32px;
   padding: 24px;
   padding-right: 32px;
   border-radius: 16px;
   padding-left: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 `;
 
 export const Content = styled.li`
   width: 100%;
-  background-color: yellow;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -30,7 +30,6 @@ export const Content = styled.li`
 export const ListItem = styled.li`
   width: 100%;
   height: 32px;
-  background-color: red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -66,9 +65,8 @@ export const TextTransaction = styled.h5`
 
 export const ListContent = styled.div`
   width: 100%;
-  height: 100svh;
+  height: 80svh;
   margin-top: 24px;
-  background-color: green;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -76,40 +74,31 @@ export const ListContent = styled.div`
 
 export const ListItemContent = styled.div`
   margin-left: 24px;
-  background-color: yellow;
   width: 144px;
 `;
 
 export const ListItemIndustry = styled.div`
-  margin-left: px;
-  background-color: pink;
+  margin-left: 0px;
 `;
 
 export const ListItemDate = styled.div`
   /* margin-right: 64px; */
-  background-color: grey;
   margin-left: 16px;
 `;
 
 export const ListItemTransaction = styled.div`
-  background-color: red;
   margin-left: 16px;
 `;
 
 export const ListItemAmount = styled.div`
-  background-color: red;
   margin-left: 16px;
 `;
 
 export const ListItemState = styled.div`
-  background-color: grey;
   margin-right: 24px;
 `;
 
-export const ListItemCurrency = styled.div`
-  background-color: blue;
-  /* margin-left: 32px; */
-`;
+export const ListItemCurrency = styled.div``;
 
 export const TruncatedH5 = styled.h5`
   overflow: hidden;
@@ -120,6 +109,29 @@ export const TruncatedH5 = styled.h5`
 `;
 
 export const Button = styled.button`
-  width: 50%;
-  height: 50px;
+  width: 15%;
+  height: 15px;
+  height: 25px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ddd;
+`;
+
+export const ContentButton = styled.div`
+  width: 100%;
+  flex-direction: row;
+  margin-top: -64px;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const TextButton = styled.h5`
+  font-family: var(--font-nunito-bold);
+  color: #151515;
+  font-size: 14px;
 `;

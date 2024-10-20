@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import ArrowBackIos from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos";
 
 import {
   Container,
@@ -18,6 +20,8 @@ import {
   TextDate,
   TextAmount,
   TextTransaction,
+  ContentButton,
+  TextButton,
 } from "./styles";
 
 import { mockJson } from "../../data";
@@ -150,12 +154,28 @@ export const List = () => {
           </ListItemState>
         </ListContent>
 
-        <Button onClick={handlePrevious} disabled={currentPage === 1}>
-          Anterior
-        </Button>
-        <Button onClick={handleNext} disabled={currentPage === totalPages}>
-          Próxima
-        </Button>
+        <ContentButton>
+          <Button onClick={handlePrevious} disabled={currentPage === 1}>
+            <ArrowBackIos
+              fontSize="small"
+              sx={{
+                color: "#151515",
+              }}
+            />
+            <TextButton>Anterior</TextButton>
+          </Button>
+
+          <Button onClick={handleNext} disabled={currentPage === totalPages}>
+            <TextButton>Próximo</TextButton>
+
+            <ArrowForwardIos
+              fontSize="small"
+              sx={{
+                color: "#151515",
+              }}
+            />
+          </Button>
+        </ContentButton>
       </Container>
     </>
   );

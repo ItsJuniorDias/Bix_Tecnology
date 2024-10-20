@@ -13,12 +13,12 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-top: -688px;
+  margin-top: -608px;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 44px;
+  padding-right: 72px;
   margin-left: 290px;
 `;
 

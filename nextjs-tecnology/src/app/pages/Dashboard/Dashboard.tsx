@@ -6,25 +6,29 @@ import { Container, Text, Content } from "./styles";
 
 export const Dashboard = () => {
   return (
-    <Container>
-      <Content onClick={() => console.log("CLIQUEI")}>
-        <HomeIcon
-          sx={{
-            color: "#81858d",
-          }}
-        />
-        <Text>Home</Text>
-      </Content>
+    <>
+      <Container>
+        <Content onClick={() => console.log("CLIQUEI")}>
+          <HomeIcon
+            sx={{
+              color: "#81858d",
+            }}
+          />
+          <Text>Home</Text>
+        </Content>
 
-      <Content onClick={() => console.log("CLIQUEI")}>
-        <AssignmentIcon
-          sx={{
-            color: "#81858d",
-          }}
-        />
+        <Content onClick={() => console.log("CLIQUEI")}>
+          <AssignmentIcon
+            sx={{
+              color: "#81858d",
+            }}
+          />
 
-        <Text>Orders</Text>
-      </Content>
-    </Container>
+          <Text>Orders</Text>
+        </Content>
+      </Container>
+
+      {/* <FakeContent /> */}
+    </>
   );
 };

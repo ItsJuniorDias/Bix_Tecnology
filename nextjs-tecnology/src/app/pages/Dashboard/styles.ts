@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 25%;
-  height: 100svh;
+  height: 90svh;
   background-color: #ecedef;
-  padding-top: 24px;
+  padding-top: 32px;
 `;
 
 export const Text = styled.h5`
