@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 90%;
-  height: 100svh;
+  height: 80svh;
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -23,8 +23,6 @@ export const Content = styled.li`
   justify-content: space-around;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 `;
@@ -42,7 +40,28 @@ export const ListItem = styled.li`
 `;
 
 export const Text = styled.h5`
-  /* color: #dddddd; */
+  color: #151515;
+  margin-left: 32px;
+`;
+
+export const TextIndustry = styled.h5`
+  margin-left: 128px;
+  color: #151515;
+`;
+
+export const TextDate = styled.h5`
+  margin-left: 164px;
+  color: #151515;
+`;
+
+export const TextAmount = styled.h5`
+  margin-left: 140px;
+  color: #151515;
+`;
+
+export const TextTransaction = styled.h5`
+  margin-left: 64px;
+  color: #151515;
 `;
 
 export const ListContent = styled.div`
@@ -83,8 +102,8 @@ export const ListItemAmount = styled.div`
 `;
 
 export const ListItemState = styled.div`
-  background-color: red;
-  margin-left: 32px;
+  background-color: grey;
+  margin-right: 24px;
 `;
 
 export const ListItemCurrency = styled.div`
@@ -96,6 +115,11 @@ export const TruncatedH5 = styled.h5`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 100%; /* Adjust width as needed */
-  color: #0d0e11;
+  width: 100%;
+  color: #151515;
+`;
+
+export const Button = styled.button`
+  width: 50%;
+  height: 50px;
 `;
