@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Search from "@mui/icons-material/Search";
 import FilterListIcon from "@mui/icons-material/FilterList";
 
 import { Container, Filter, Text, Input, Content } from "./styles";
 
-export const Header = () => {
+interface HeaderProps {
+  value: string;
+  onChange: (item: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+export const Header = ({ value, onChange }: HeaderProps) => {
   return (
     <>
       <Content>
@@ -15,7 +20,12 @@ export const Header = () => {
             }}
           />
 
-          <Input placeholder="Pesquisar ordens..." />
+          <Input
+            value={value}
+            type="text"
+            onChange={(props) => onChange(props)}
+            placeholder="Pesquisar ordens..."
+          />
         </Container>
 
         <Filter onClick={() => console.log("CLIQUEI")}>

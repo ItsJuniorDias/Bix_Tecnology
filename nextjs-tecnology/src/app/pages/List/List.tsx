@@ -111,11 +111,17 @@ export const List = () => {
 
           <ListItemAmount>
             <ul>
-              {currentItems.map((item, index) => (
-                <li key={index}>
-                  <TruncatedH5>{item.amount}</TruncatedH5>
-                </li>
-              ))}
+              {currentItems.map((item, index) => {
+                const formattedAmount = (item.amount / 100)
+                  .toFixed(2)
+                  .replace(".", ",");
+
+                return (
+                  <li key={index}>
+                    <TruncatedH5>{formattedAmount}</TruncatedH5>
+                  </li>
+                );
+              })}
             </ul>
           </ListItemAmount>
 
