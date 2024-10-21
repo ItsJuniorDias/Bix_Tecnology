@@ -108,30 +108,10 @@ export const TruncatedH5 = styled.h5`
   color: #151515;
 `;
 
-export const Button = styled.button`
-  width: 15%;
-  height: 15px;
-  height: 25px;
-  border-width: 0;
-  border-radius: 8px;
-  margin-left: 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #ddd;
-`;
-
 export const ContentButton = styled.div`
   width: 100%;
   flex-direction: row;
-  margin-top: -64px;
+  /* margin-top: -64px; */
   display: flex;
   justify-content: flex-end;
-`;
-
-export const TextButton = styled.h5`
-  font-family: var(--font-nunito-bold);
-  color: #151515;
-  font-size: 14px;
 `;
